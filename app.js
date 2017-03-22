@@ -550,7 +550,7 @@ function updateBullet(){
 	Bullet(id,x,y,spdX,spdY,width,height,actor.type);
 }
 function startNewGame(){
-	player.hp = 1000;
+	player.hp = 100;
 	player.sp= player.spMax
 	player.x=0;
 	player.y=0;
