@@ -75,10 +75,10 @@ document.onkeydown = function(event){
 		player.pressingLeft = true;
 	else if(event.keyCode === 87) // w
 		player.pressingUp = true;
-    else if(event.keyCode===80) //p
-        paused=!paused;
-    else if(event.keyCode===72) //h
-         player.performSpecialAttack();
+        else if(event.keyCode===80) //p
+                paused=!paused;
+        else if(event.keyCode===72) //h
+                player.performSpecialAttack();
 }
      
 
@@ -113,20 +113,20 @@ document.onkeyup = function(event){
 		var hp = 100*player.hp/player.hpMax;
 		if(hp < 0)
 			hp = 0;
-		ctx.fillRect(65,15,hp,10);
+			ctx.fillRect(65,15,hp,10);
 		
-		ctx.fillStyle = 'blue';
+			ctx.fillStyle = 'blue';
 		var sp = 100*player.sp/player.spMax;
 		if(sp < 0)
 			sp = 0;
-		ctx.fillRect(65,25,sp,10);
+			ctx.fillRect(65,25,sp,10);
 		
-		ctx.strokeStyle = 'black';
-		ctx.strokeRect(65,15,100,20);
+			ctx.strokeStyle = 'black';
+			ctx.strokeRect(65,15,100,20);
 		
-		ctx.restore();
-	ctx.fillStyle= 'black';
-	ctx.fillText('Score: ' + score,200,30);
+			ctx.restore();
+	        	ctx.fillStyle= 'black';
+	                ctx.fillText('Score: ' + score,200,30);
 }
 
  
